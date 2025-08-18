@@ -25,8 +25,20 @@ for(const sum of Array(totalNumber).keys()){
 
  // USING THE REDUCE METHOD TO REDUCE THE PRIME NUMBER
 
- const totalPrime = prime.reduce((initialNumber, currentPrimeNumber) => initialNumber + currentPrimeNumber)
+ const totalPrime = prime.reduce((initialNumber, currentPrimeNumber) => (initialNumber + currentPrimeNumber), 0)
 
  console.log(totalPrime);
 
  //RESCURSIVE
+
+ function fabonacci(n){
+     if(n <= 2){
+        return 1
+     }else{
+        return fabonacci (n - 1) + (n - 2)
+     }
+      
+ }
+
+ console.log(fabonacci(100));
+ 

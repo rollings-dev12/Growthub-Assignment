@@ -26,7 +26,7 @@ console.log(sumOdd);
 
 //USING THE REDUCE METHOD ON THE ODD NUMBER
 
-const totalOdd = onlyOddNumber.reduce((initialOdd, onlyOddNumber) => initialOdd + onlyOddNumber)
+const totalOdd = onlyOddNumber.reduce((initialOdd, onlyOddNumber) =>( initialOdd + onlyOddNumber), 0)
 console.log(totalOdd);
 
 // using FOR...OF LOOP TO BRING OUT THE EVEN NUMBER
@@ -47,6 +47,6 @@ console.log(sumEven);
 
 //USING THE REDUCE METHOD ON THE EVEN NUMBER
 
-const totalEven = onlyEvenNumber.reduce((initialOdd, onlyEvenNumber) => initialOdd + onlyEvenNumber)
+const totalEven = onlyEvenNumber.reduce((initialOdd, onlyEvenNumber) => (initialOdd + onlyEvenNumber), 0)
 console.log(totalEven);
 
